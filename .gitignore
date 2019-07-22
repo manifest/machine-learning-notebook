@@ -15,3 +15,4 @@ Session.vim
 # Python
 venv
 data
+__pycache__
