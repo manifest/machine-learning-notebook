@@ -1,5 +1,5 @@
 absl-py==0.7.1
-altair==3.1.0
+altair==3.2.0
 appnope==0.1.0
 astor==0.8.0
 attrs==19.1.0
@@ -35,7 +35,7 @@ Keras-Preprocessing==1.1.0
 Markdown==3.1.1
 MarkupSafe==1.1.1
 mistune==0.8.4
-mlts==0.2.0
+mlts==0.3.0
 nbconvert==5.5.0
 nbformat==4.4.0
 notebook==6.0.0
@@ -47,7 +47,7 @@ pexpect==4.7.0
 pickleshare==0.7.5
 prometheus-client==0.7.1
 prompt-toolkit==2.0.9
-protobuf==3.9.0
+protobuf==3.9.1
 ptyprocess==0.6.0
 pycapnp==0.6.4
 Pygments==2.4.2
