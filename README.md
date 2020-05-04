@@ -17,6 +17,14 @@ python -m pip install -r requirements.txt
 Download datasets
 
 ```bash
+## Auto-mpg
+kaggle datasets download -d 'uciml/autompg-dataset' \
+    && SOURCE='autompg-dataset.zip' \
+    && DIST='data/auto-mpg' \
+    && mkdir -p "${DIST}" \
+    && unzip -d "${DIST}" "${SOURCE}" \
+    && rm "${SOURCE}"
+
 ## Fasion MNIST
 kaggle datasets download -d 'zalando-research/fashionmnist' \
     && SOURCE='fashionmnist.zip' \
@@ -24,6 +32,12 @@ kaggle datasets download -d 'zalando-research/fashionmnist' \
     && mkdir -p "${DIST}" \
     && unzip -d "${DIST}" "${SOURCE}" \
     && rm "${SOURCE}"
+
+## Shakespeare Dataset
+DIST='data/shakespeare' \
+    && SOURCE='https://homl.info/shakespeare' \
+    && mkdir -p "${DIST}" \
+    && curl -fsSL -o "${DIST}/data.txt" "${SOURCE}"
 ```
 
 Run the notebook:
